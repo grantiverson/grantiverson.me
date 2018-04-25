@@ -129,6 +129,7 @@
                 controller.openAdmin();
             });
             document.getElementById('cancel-input').addEventListener('click', function() {
+                event.preventDefault();
                 controller.openAdmin();
             });
             document.getElementById('submit-input').addEventListener('click', function(event) {
