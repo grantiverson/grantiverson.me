@@ -32,7 +32,7 @@
     };
 
 
-    let octopus = {
+    let controller = {
         thisCat: null,
 
         init: function() {
@@ -84,14 +84,14 @@
             this.catCounterElem = document.getElementById('cat-counter-text');
 
             document.getElementById('cat-image').addEventListener('click', function() {
-                octopus.counterUp();
+                controller.counterUp();
             });
 
             this.render();
         },
 
         render: function() {
-            let cat = octopus.getCat();
+            let cat = controller.getCat();
             document.getElementById('cat-counter-text').textContent = cat.clickCounter;
             document.getElementById('cat-name').textContent = cat.name;
             document.getElementById('cat-image').src = cat.imgSrc;
@@ -110,7 +110,7 @@
         },
 
         render: function() {
-            let cats = octopus.getCats();
+            let cats = controller.getCats();
             document.getElementById('sidebar').innerHTML = '';
 
             // creates a tags in HTML, populates them with the cats' names, creates an event listener for each, appends the elements to the sidebar
@@ -118,7 +118,7 @@
                 let elem = document.createElement('a');
                 elem.innerHTML = cats[i].name;
                 elem.addEventListener('click', function() {
-                    octopus.selectCat(cats[i]);
+                    controller.selectCat(cats[i]);
                     mainView.render();
                 });
 
@@ -126,18 +126,18 @@
             };
 
             document.getElementById('admin-button').addEventListener('click', function() {
-                octopus.openAdmin();
+                controller.openAdmin();
             });
             document.getElementById('cancel-input').addEventListener('click', function() {
-                octopus.openAdmin();
+                controller.openAdmin();
             });
             document.getElementById('submit-input').addEventListener('click', function(event) {
                 event.preventDefault();
-                octopus.submitAdmin();
+                controller.submitAdmin();
             });
         }
     };
 
 
-    octopus.init();
+    controller.init();
 })();
