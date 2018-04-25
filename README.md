@@ -41,7 +41,3 @@ As a web developer, I need an online presence to showcase projects I have worked
 ## Author
 
 * **Grant Iverson** - [GitHub](https://github.com/grantiverson)
-
-### Acknowledgements
-
-`index.html` and `css/style.css` were provided as part of [Udacity's Front-End Web Development Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001?gclid=CjwKCAjwq_vWBRACEiwAEReprL6RuGAkBbe7XRljOzu9GYr_zQ70LKtonUz_Qev-z0rf07jmNrZNMRoCF9sQAvD_BwE).
