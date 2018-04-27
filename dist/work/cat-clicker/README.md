@@ -4,7 +4,7 @@ This project was completed as an exercise for my Front-End Web Development Nanod
 
 ## Run live
 
-Run it live at [cat-clicker.grantiverson.me](http://cat-clicker.grantiverson.me)
+Run it live at [cat-clicker.iverson.io](http://cat-clicker.iverson.io)
 
 ## Download
 

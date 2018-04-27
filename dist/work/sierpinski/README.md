@@ -6,7 +6,7 @@ I did it with JavaScript instead.
 
 ## Run live
 
-Run it live at http://sierpinski.grantiverson.me
+Run it live at [sierpinski.iverson.io](http://sierpinski.iverson.io)
 
 ### How it works
 
