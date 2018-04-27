@@ -4,7 +4,7 @@ I am a keenly analytical front-end web developer who makes dynamic, responsive, 
 
 ## Run live
 
-Run it live at http://grantiverson.me
+Run it live at http://iverson.io
 
 ## Download
 
@@ -18,7 +18,7 @@ These instructions will allow you to get a copy of the project that runs on your
 ### Installing
 
 Instructions to clone and run the project:
-1. Clone the git project using `$ git clone https://github.com/grantiverson/grantiverson.me.git`
+1. Clone the git project using `$ git clone https://github.com/grantiverson/iverson.io.git`
 2. Navigate to the root directory for the project
 3. Open index.html in your favorite browser
 
