@@ -19,10 +19,9 @@ var Enemy = function(x, y) {
 
 Enemy.prototype = Object.create(Character.prototype);
 
-// Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
-    // You should multiply any movement by the dt parameter
+    // Multiplying movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
     if (this.x > 500) {     // Resets enemies when they move off screen
@@ -49,9 +48,6 @@ const checkCollisions = function() {    // Checks to see if player has collided 
     }
 };
 
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
 const Player = function(x, y) {
     Character.call(this, x, y);
     this.sprite = 'images/char-boy.png';    // Sets player image
@@ -103,9 +99,6 @@ Player.prototype.handleInput = function(key) {  // Moves player based on key inp
     }
 }
 
-// Now instantiate your objects.
-// Place all enemy objects in an array called allEnemies
-// Place the player object in a variable called player
 let enemy1 = new Enemy;
 let enemy2 = new Enemy;
 let enemy3 = new Enemy;
@@ -116,8 +109,8 @@ const allEnemies = [enemy1, enemy2, enemy3, enemy4];
 const player = new Player(200, 400);
 player.reset();
 
-// This listens for key presses and sends the keys to your
-// Player.handleInput() method. You don't need to modify this.
+// This listens for key presses and sends the keys to
+// Player.handleInput() method.
 document.addEventListener('keyup', function(e) {
     var allowedKeys = {
         37: 'left',
