@@ -1,5 +1,5 @@
 //Responsive Design
-$break-small: 481px
+$break-small: 521px
 $break-large: 701px
 
 //Fonts
@@ -121,7 +121,7 @@ h2
 h3
   font-family: $sans-font-stack
   font-size: 2.5em
-  margin-bottom: 2.5em
+  margin-bottom: 40px
   text-align: center
 
 h4
@@ -133,7 +133,7 @@ h4
 
 h5
   font-family: $sans-font-stack
-  font-size: 1.9em
+  font-size: 1.4em
   padding-bottom: 2px
 
 h6
@@ -190,6 +190,8 @@ strong
   text-align: center
 
 .contact-button
+  margin-top: 40px
+
   &:hover
     text-decoration: underline $dark-background-color
 
@@ -259,9 +261,11 @@ section
 
   h5
     border-bottom: 1px solid $light-text-color
+    padding: 10px
 
   p
     color: $main-text-color
+    padding: 10px
 
 .light-page
   background-color: $light-body-color
@@ -305,7 +309,7 @@ section
 
 #introduction-content
   display: inline-block
-  margin-top: 30vh
+  margin-top: 40vh
 
 #introduction-text
   display: inline-block
@@ -325,6 +329,10 @@ section
 #about-txt
   overflow: hidden
 
+.indent
+  margin-bottom: 16px
+  text-indent: 1em
+
 
 
 //******************************
@@ -336,16 +344,23 @@ section
   flex-direction: column
   margin: 0 auto
 
-.skills-items-container
+.skills-list-row
   background-color: $light-body-color
   box-shadow: 2px 4px 10px #aaa
-  margin-bottom: 30px
+  margin: 0 15px 40px
   padding: 15px
   width: 80%
+  text-align: center
+
+.skills-items-container
+  max-width: 285px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
 
 .skills-item
   float: left
-  margin: 5px 5px 0
+  margin: 15px 15px 0
   text-align: center
 
 .skills-img
@@ -425,9 +440,6 @@ section
   h4
     font-size: 1.7em
 
-  h5
-    font-size: 1.4em
-
 .projects-skills-img-container
   position: absolute
   bottom: 0
@@ -450,6 +462,7 @@ section
 
 #contact-info
   margin-top: 2em
+  text-align: center
 
 #github-img
   filter: invert(100%)
@@ -587,20 +600,13 @@ footer
   //* PAGE: INTRODUCTION
   //******************************/
 
+  #introduction-content
+    margin-top: 30vh
+
   #logo
     float: left
     margin: 0 10px 10px
     width: 80px
-
-
-
-  //******************************
-  //* PAGE: ABOUT
-  //******************************/
-
-  .indent
-    margin-bottom: 16px
-    text-indent: 1em
 
 
 
@@ -612,15 +618,16 @@ footer
     align-items: center
     flex-flow: row wrap
 
-  .skills-items-container
+  .skills-list-row
     display: inline-block
     flex-grow: 1
-    margin: 0 15px 40px
     padding: 15px
     width: auto
+    text-align: left
 
-  .skills-item
-    margin: 15px 15px 0
+  .skills-items-container
+    max-width: none
+    justify-content: flex-start
 
 
 
@@ -629,7 +636,7 @@ footer
   //******************************/
 
   #projects-selector
-    width: 355px
+    width: 475px
 
     ul
 
@@ -640,7 +647,7 @@ footer
     max-width: 335px
 
   .projects-item
-    margin: 0
+    margin: 5px
 
   .projects-item-details
     h4
@@ -735,7 +742,7 @@ footer
   //* PAGE: SKILLS
   //******************************/
 
-  .skills-items-container
+  .skills-list-row
     display: inline-block
     margin: 0 15px 50px
     padding: 15px
