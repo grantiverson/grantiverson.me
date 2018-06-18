@@ -16,7 +16,8 @@ $accent-background-color: #22bcf0
 $hover-nav-color: #22bcf0
 
 //Font Colors
-$main-text-color: #abb2bf
+$main-text-color: #999
+$link-text-color: #abb2bf
 $accent-color: #22bcf0
 $dark-text-color: #302f2f
 $light-text-color: #fafafa
@@ -151,6 +152,9 @@ ul
 .light-text-span
   color: $light-text-color
 
+.dark-text-span
+  color: $dark-text-color
+
 
 
 //==============================
@@ -209,7 +213,7 @@ nav
       padding: .5rem .5rem 0
 
       a
-        color: $main-text-color
+        color: $link-text-color
         display: block
 
         &:hover
@@ -300,6 +304,9 @@ section
 #about-txt
   overflow: hidden
 
+  p
+    color: $main-text-color
+
 .indent
   margin-bottom: 1rem
   text-indent: 1rem
@@ -317,11 +324,16 @@ section
 
 .skills-list-category
   background-color: $light-body-color
-  box-shadow: .125rem .25rem .625rem #aaa
+  box-shadow: .0625rem .125rem .125rem #aaa
   margin: 0 auto 2.5rem
   padding: 1rem
   text-align: center
+  transition: .25s ease
   width: 80%
+
+  &:hover
+    box-shadow: .25rem .5rem .625rem #aaa
+    transition: .25s ease
 
 .skills-items-container
   display: flex
@@ -362,7 +374,7 @@ section
       width: 7.25rem
 
       a
-        color: $main-text-color
+        color: $link-text-color
         display: block
         padding: .5rem 0 .25rem
 
@@ -372,7 +384,7 @@ section
           text-decoration: none
 
 .active
-  border-bottom: .1875rem solid $main-text-color
+  border-bottom: .1875rem solid $link-text-color
   margin-bottom: -.1875rem
   text-decoration: none
 
@@ -383,6 +395,9 @@ section
   position: relative
 
   &:hover
+    .projects-img
+      transform: scale(1.1)
+
     .projects-img,
     .projects-skills-img
       opacity: .1
@@ -394,7 +409,7 @@ section
   display: block
   height: auto
   max-width: 100%
-  transition: .5s ease
+  transition: .25s ease
   width: auto
 
 .projects-item-details
@@ -404,7 +419,7 @@ section
   text-align: center
   top: 50%
   transform: translate(-50%, -50%)
-  transition: .5s ease
+  transition: .25s ease
   width: 90%
 
   h4
@@ -423,7 +438,7 @@ section
 .projects-skills-img
   filter: drop-shadow(.125rem .125rem .25rem #000)
   height: 1.875rem
-  transition: .5s ease
+  transition: .25s ease
 
 
 
@@ -557,9 +572,9 @@ footer
 
 
 
-  //==============================
-  // PAGES
-  //==============================/
+        //==============================
+        // PAGES
+        //==============================/
 
   section
     padding: 9.375rem 1.625rem
@@ -627,9 +642,9 @@ footer
 
 
 
-  //==============================
-  // RETURN TO TOP BUTTON
-  //==============================/
+    //==============================
+    // RETURN TO TOP BUTTON
+    //==============================/
 
   #return-to-top-button
     display: none
@@ -713,9 +728,6 @@ footer
 
   .skills-item
     margin: 1rem 1rem 0
-
-  .skills-img
-    height: 6.25rem
 
 
 
