@@ -1,6 +1,6 @@
 //Responsive Design
-$break-small: 521px
-$break-large: 701px
+$break-small: 34rem
+$break-large: 43.75rem
 
 //Fonts
 $sans-font-stack:  Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif
@@ -23,7 +23,7 @@ $light-text-color: #fafafa
 $css-text-color: #98c379
 
 //Other
-$content-max-width: 1181px
+$content-max-width: 73.8125rem
 
 //******************************
 //* NORMALIZE CSS
@@ -38,7 +38,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p,
 a,
 img,
@@ -96,7 +95,7 @@ section *
 
 \:focus
   outline-color: $hover-nav-color
-  outline-width: 3px
+  outline-width: .1875rem
 
 //******************************
 //* TEXT
@@ -107,45 +106,43 @@ h1
   font-family: $mono-font-stack
   font-size: 7vw
   font-weight: 100
-  margin: 2px 0
+  margin: -.375rem 0 .125rem
 
 h2
   color: $light-text-color
   font-family: $mono-font-stack
-  font-size: 3.1vw
+  font-size: 3.2vw
   font-weight: 100
 
 #title
-  margin-left: 2em
+  margin-left: 4.5vw
+
+.css-value-text-span
+  color: $css-text-color
 
 h3
   font-family: $sans-font-stack
-  font-size: 2.5em
-  margin-bottom: 40px
+  font-size: 2.5rem
+  margin-bottom: 2.5rem
   text-align: center
 
 h4
-  color: $accent-color
   font-family: $sans-font-stack
-  font-size: 1em
-  // font-weight: bold
-  margin-top: .2em
+  font-size: 1.5rem
+  padding-bottom: .125rem
 
 h5
+  color: $accent-color
   font-family: $sans-font-stack
-  font-size: 1.4em
-  padding-bottom: 2px
-
-h6
-  font-family: $sans-font-stack
-  font-weight: 200
-  margin-bottom: .2em
+  font-size: 1rem
+  // font-weight: bold
+  margin-top: .25rem
 
 p
   color: $main-text-color
   font-family: $mono-font-stack
-  font-size: 1em
-  margin-bottom: .2em
+  font-size: 1rem
+  margin-bottom: .25rem
 
 a
   background-color: transparent
@@ -159,18 +156,8 @@ ul
   font-family: $sans-font-stack
   list-style: none
 
-strong
-  background-color: $accent-background-color
-  border-radius: 3px
-  color: $dark-text-color
-  padding: 0 2px 1px
-  // box-shadow: 2px 1px 1px #aaa
-
 .light-text-span
   color: $light-text-color
-
-.css-value-text-span
-  color: $css-text-color
 
 
 
@@ -182,15 +169,15 @@ strong
   color: $dark-text-color
   display: block
   font-family: $sans-font-stack
-  font-size: 1.5em
+  font-size: 1.5rem
   font-weight: 400
   margin: 0 auto
-  margin-top: .2em
-  padding: .3em .2em
+  margin-top: .2rem
+  padding: .375rem .25rem
   text-align: center
 
 .contact-button
-  margin-top: 40px
+  margin-top: 2.5rem
 
   &:hover
     text-decoration: underline $dark-background-color
@@ -211,31 +198,31 @@ header
 //******************************/
 
 #nav-button
-  margin: .2em
+  margin: .25rem
   position: absolute
   right: 0
   top: 0
 
 nav
   display: none
-  font-size: 1.5em
-  padding-bottom: .4em
+  font-size: 1.5rem
+  padding-bottom: .5rem
 
   ul
     list-style-type: none
     margin-left: 0
-    padding: 20px
+    padding: 1.25rem
 
     li
-      padding: .4em .4em 0
+      padding: .5rem .5rem 0
 
       a
         color: $main-text-color
         display: block
 
         &:hover
-          border-bottom: 3px solid $hover-nav-color
-          margin-bottom: -3px
+          border-bottom: .1875rem solid $hover-nav-color
+          margin-bottom: -.1875rem
           text-decoration: none
 
 
@@ -249,50 +236,43 @@ nav
 //******************************/
 
 section
-  padding: 150px 15px
+  padding: 9.375rem 1rem
 
 .dark-page
   background-color: $dark-background-color
 
-  h3,
-  h6
+  h3
     color: $light-text-color
 
-  h4
-    border-bottom: 1px solid $light-text-color
-    padding: 10px
+  h5
+    border-bottom: .0625rem solid $light-text-color
+    padding: .625rem
 
   p
     color: $main-text-color
-    padding: 10px
+    padding: .625rem
 
 .light-page
   background-color: $light-body-color
 
   h3,
-  h6
-    color: $dark-text-color
-
-  h4
-    border-bottom: 1px solid $dark-text-color
-
   p
-    color: $dark-text-color
-
-.light2-page
-  background-color: $light2-body-color
-  padding-bottom: 110px
-
-  h3,
-  h5,
-  h6
     color: $dark-text-color
 
   h5
-    border-bottom: 1px solid $dark-text-color
+    border-bottom: .0625rem solid $dark-text-color
 
+.light2-page
+  background-color: $light2-body-color
+  padding-bottom: 6.875rem
+
+  h3,
+  h4,
   p
     color: $dark-text-color
+
+  h4
+    border-bottom: .0625rem solid $dark-text-color
 
 
 
@@ -316,7 +296,7 @@ section
 
 #logo
   float: left
-  margin: 0 5px
+  margin: 0 .5rem 0 0
   width: 18vw
 
 
@@ -329,8 +309,8 @@ section
   overflow: hidden
 
 .indent
-  margin-bottom: 16px
-  text-indent: 1em
+  margin-bottom: 1rem
+  text-indent: 1rem
 
 
 
@@ -345,25 +325,25 @@ section
 
 .skills-list-category
   background-color: $light-body-color
-  box-shadow: 2px 4px 10px #aaa
-  margin: 0 15px 40px
-  padding: 15px
+  box-shadow: .125rem .25rem .625rem #aaa
+  margin: 0 auto 2.5rem
+  padding: 1rem
   width: 80%
   text-align: center
 
 .skills-items-container
-  max-width: 285px
+  max-width: 18rem
   display: flex
   flex-wrap: wrap
   justify-content: space-around
 
 .skills-item
   float: left
-  margin: 15px 15px 0
+  margin: 1rem 1rem 0
   text-align: center
 
 .skills-img
-  height: 75px
+  height: 4.75rem
 
 
 
@@ -378,9 +358,8 @@ section
 
 #projects-selector
   display: block
-  font-size: 1.2em
-  padding-bottom: 20px
-  z-index: 1
+  font-size: 1.25rem
+  padding-bottom: 1.25rem
 
   ul
 
@@ -388,26 +367,26 @@ section
       display: block
       padding: 0
       text-align: center
-      width: 115px
+      width: 7.25rem
 
       a
         color: $main-text-color
         display: block
-        padding: 7px 0 4px
+        padding: .5rem 0 .25rem
 
         &:hover
-          border-bottom: 3px solid $hover-nav-color
-          margin-bottom: -3px
+          border-bottom: .1875rem solid $hover-nav-color
+          margin-bottom: -.1875rem
           text-decoration: none
 
 .active
-  border-bottom: 3px solid $main-text-color
-  margin-bottom: -3px
+  border-bottom: .1875rem solid $main-text-color
+  margin-bottom: -.1875rem
   text-decoration: none
 
 .projects-item
   background-color: $dark-background-color
-  margin: 5px 0
+  margin: .375rem 0
   position: relative
   overflow: hidden
 
@@ -436,18 +415,18 @@ section
   transition: .5s ease
   width: 90%
 
-  h4
-    font-size: 1.7em
+  h5
+    font-size: 1.75rem
 
 .projects-skills-img-container
   position: absolute
   bottom: 0
-  right: 7px
+  right: .5rem
 
 
 .projects-skills-img
-  filter: drop-shadow(1px 2px 4px #000)
-  height: 30px
+  filter: drop-shadow(.125rem .125rem .25rem #000)
+  height: 1.875rem
   transition: .5s ease
 
 
@@ -456,12 +435,21 @@ section
 //* PAGE: CONTACT ME
 //******************************/
 
+#contact-info
+  margin: 2rem auto 0
+  overflow: auto
+  width: 12rem
+
+#contact-info-icons,
+#contact-info-text
+  float: left
+  padding: 0 .25rem
+
+#contact-info-icons
+  text-align: center
+
 .contact-text
   color: $accent-color
-
-#contact-info
-  margin-top: 2em
-  text-align: center
 
 #github-img
   filter: invert(100%)
@@ -474,7 +462,7 @@ section
 
 #return-to-top-button
   background-color: $nav-color
-  margin: 0 15px
+  margin: 0 1rem
   position: relative
 
 
@@ -482,21 +470,16 @@ section
 //* FOOTER
 //******************************/
 
-#social-media-buttons
-  margin: 20px auto 0
-
 footer
-  margin: 10px 0 20px
+  margin: .625rem 0 1.25rem
   text-align: center
   width: 100%
 
-  a
-    img
-      height: 44px
-      margin: 0 5px
-
   p
     text-align: center
+
+#footer-text
+  margin: 1.25rem auto 0
 
 .vert-bar
   display: none
@@ -505,7 +488,7 @@ footer
 
 //*########################################################################################################################################################################*/
 //*     ****************************************
-//*     Screens with higher resolution than 480px
+//*     Screens with higher resolution than 34rem/544px
 //*     ****************************************/
 //*########################################################################################################################################################################*/
 
@@ -516,29 +499,21 @@ footer
   //******************************/
 
   h1
-    font-size: 1.8em
-    margin-top: -3px
+    font-size: 2.375rem
+    margin-top: -.375rem
 
   h2
-    font-size: .8em
+    font-size: 1.08rem
 
   #title
-    margin-left: 2em
+    margin-left: 1.5rem
 
   h3
-    font-size: 3em
-
-  h4
-    font-size: 1.4em
-
-  h5
-    font-size: 1.25em
-
-  h6
-    font-size: 1em
+    font-size: 3rem
+    margin-bottom: 3rem
 
   p
-    font-size: 1.1em
+    font-size: 1rem
 
 
 
@@ -548,11 +523,11 @@ footer
 
   .button
     display: block
-    font-size: 1.2em
+    font-size: 1.25rem
     margin-left: auto
     margin-right: auto
-    padding: 10px
-    width: 200px
+    padding: .625rem
+    width: 12.5rem
 
 
 
@@ -567,22 +542,22 @@ footer
   nav
     display: block
     float: right
-    font-size: 1.2em
+    font-size: 1.25rem
     padding: 0
-    width: 470px
+    width: 29.375rem
     z-index: 1
 
     ul
 
       li
         display: inline-block
-        margin-right: -4px
+        margin-right: -.25rem
         padding: 0
         text-align: center
         width: 25%
 
         a
-          padding: 7px 4px 4px
+          padding: .5rem .25rem .25rem
 
 
 
@@ -591,7 +566,7 @@ footer
   //******************************/
 
   section
-    padding: 150px 25px
+    padding: 9.375rem 1.625rem
 
 
 
@@ -600,12 +575,10 @@ footer
   //******************************/
 
   #introduction-content
-    margin-top: 30vh
+    margin-top: calc(40vh - 4.6875rem)
 
   #logo
-    float: left
-    margin: 0 10px 10px
-    width: 80px
+    width: 6.25rem
 
 
 
@@ -620,7 +593,8 @@ footer
   .skills-list-category
     display: inline-block
     flex-grow: 1
-    padding: 15px
+    padding: 1rem
+    margin: 0 1rem 2.5rem
     width: auto
     text-align: left
 
@@ -635,7 +609,7 @@ footer
   //******************************/
 
   #projects-selector
-    width: 475px
+    width: 30rem
 
     ul
 
@@ -643,20 +617,17 @@ footer
         display: inline-block
 
   .projects-img
-    max-width: 335px
+    max-width: 20rem
 
   .projects-item
-    margin: 5px
+    margin: .25rem
 
   .projects-item-details
-    h4
-      font-size: 1.5em
-
     h5
-      font-size: 1.2em
+      font-size: 1.5rem
 
     p
-      font-size: .9em
+      font-size: .9rem
 
 
 
@@ -674,11 +645,7 @@ footer
   footer
     p
       float: left
-      font-size: .9em
-
-    a
-      img
-        height: 44px
+      font-size: .8rem
 
   #footer-text
     display: inline-block
@@ -686,7 +653,7 @@ footer
   .vert-bar
     display: inline
     float: left
-    margin: 0 1px
+    margin: 0 .0625rem
 
 
 
@@ -696,7 +663,7 @@ footer
 
 //*########################################################################################################################################################################*/
 //*     *****************************************
-//*     Screens with higher resolution than 701 px
+//*     Screens with higher resolution than 43.75rem/700px
 //*     *****************************************/
 //*########################################################################################################################################################################*/
 
@@ -707,11 +674,14 @@ footer
   //******************************/
 
   h1
-    font-size: 2.7em
-    margin-top: -4px
+    font-size: 2.625rem
+    margin-top: -.25rem
 
   h2
-    font-size: 1.1em
+    font-size: 1.1875rem
+
+  #title
+    margin-left: 1.75rem
 
 
 
@@ -720,7 +690,7 @@ footer
   //******************************/
 
   section
-    padding: 150px 75px
+    padding: 9.375rem 4.6875rem
 
 
 
@@ -729,11 +699,10 @@ footer
   //******************************/
 
   #introduction
-    width: 570px
+    width: 35.625rem
 
   #logo
-    margin: 0 15px 15px
-    width: 120px
+    width: 7.5rem
 
 
 
@@ -743,29 +712,14 @@ footer
 
   .skills-list-category
     display: inline-block
-    margin: 0 15px 50px
-    padding: 15px
+    margin: 0 1rem 3.125rem
+    padding: 1rem
 
   .skills-item
-    margin: 15px 15px 0
+    margin: 1rem 1rem 0
 
   .skills-img
-    height: 100px
-
-
-
-  //******************************
-  //* FOOTER
-  //******************************/
-
-  #social-media-buttons
-    margin: 20px auto 0
-
-  footer
-    a
-      img
-        height: 25px
-        margin: 0
+    height: 6.25rem
 
 
 
