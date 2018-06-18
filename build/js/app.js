@@ -60,7 +60,7 @@ $(document).ready(function() {
                 $(this).css('opacity', 0)
             }
             if (currScrollPos > elemOffsetBottom) {
-                $(this).css('opacity', (currScrollPos - elemOffsetBottom)/100)
+                $(this).css('opacity', (currScrollPos - elemOffsetBottom)/100 - 1)
             };
         })
     })
