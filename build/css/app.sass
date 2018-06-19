@@ -1,12 +1,12 @@
-//Responsive Design
+// Responsive Design
 $break-small: 34rem
 $break-large: 43.75rem
 
-//Fonts
+// Fonts
 $serif-font-stack:  Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif
 $mono-font-stack: monaco, 'Andale Mono', monospace
 
-//Colors
+// Colors
 $dark-background-color: #282c34
 $light-body-color: #fafafa
 $light2-body-color: #e0e8f0
@@ -15,7 +15,7 @@ $nav-color: #6e6e6e
 $accent-background-color: #22bcf0
 $hover-nav-color: #22bcf0
 
-//Font Colors
+// Font Colors
 $main-text-color: #999
 $link-text-color: #abb2bf
 $accent-color: #22bcf0
@@ -23,7 +23,11 @@ $dark-text-color: #302f2f
 $light-text-color: #fafafa
 $css-text-color: #98c379
 
-//Other
+// Shadow Colors
+$light-bg-shadow-color: #aaa
+$dark-bg-shadow-color: #000
+
+// Other
 $content-max-width: 73.8125rem
 
 //==============================
@@ -301,7 +305,7 @@ section
 
 .skills-list-category
   background-color: $light-body-color
-  box-shadow: .0625rem .125rem .125rem #aaa
+  box-shadow: .0625rem .125rem .125rem $light-bg-shadow-color
   margin: 0 auto 2.5rem
   padding: 1rem
   text-align: center
@@ -309,7 +313,7 @@ section
   width: 80%
 
   &:hover
-    box-shadow: .25rem .5rem .625rem #aaa
+    box-shadow: .25rem .5rem .625rem $light-bg-shadow-color
     transition: .25s ease
 
 .skills-items-container
@@ -413,9 +417,16 @@ section
 
 
 .projects-skills-img
-  filter: drop-shadow(.125rem .125rem .25rem #000)
+  filter: drop-shadow(.125rem .125rem .25rem $dark-bg-shadow-color)
   height: 1.875rem
   transition: .25s ease
+
+.projects-skills-github
+  bottom: .25rem
+  color: $light-text-color
+  filter: drop-shadow(.125rem .125rem .25rem $dark-bg-shadow-color)
+  left: .5rem
+  position: absolute
 
 
 
@@ -462,7 +473,7 @@ section
   transition: .25s ease
 
   &:hover
-    box-shadow: .125rem .25rem .5rem #000
+    box-shadow: .125rem .25rem .5rem $dark-bg-shadow-color
     color: $light-text-color
     text-decoration: none
     transition: .25s ease
