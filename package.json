@@ -8,7 +8,7 @@
         "imagemin-pngquant": "^7.0.0"
     },
     "devDependencies": {
-        "babel-core": "^6.26.0",
+        "babel-core": "^6.26.3",
         "babel-install": "2.1.0",
         "eslint-config-jquery": "^1.0.1",
         "gulp": "^4.0.0",
@@ -17,7 +17,7 @@
         "gulp-connect": "^5.7.0",
         "gulp-imagemin": "^5.0.3",
         "gulp-sass": "^4.0.1",
-        "gulp-uglify": "^3.0.0",
+        "gulp-uglify": "^3.0.1",
         "gulp-until": "latest"
     }
 }
