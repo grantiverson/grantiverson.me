@@ -4,7 +4,7 @@ I am a keenly analytical front-end web developer who makes dynamic, responsive, 
 
 ## Run live
 
-Run it live at [iverson.io](https://iverson.io)
+~Run it live at [iverson.io](https://iverson.io)~
 
 ## Download
 
